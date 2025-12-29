@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+}
+
+/* Menu row */
+.menu {
+    list-style: none;
+    display: flex;            /* 🔑 align items horizontally */
+    align-items: center;      /* 🔑 same height */
+    padding: 0 30px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Trigger */
+.dropdown-title {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 16px 18px;       /* 🔑 match navbar item height */
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-title:hover {
+    background-color: #444;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;                /* 🔑 directly below navbar */
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 1000;            /* 🔑 prevents overlap issues */
+}
+
+/* Dropdown items */
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f4f6f8;
+}
+
+/* OPEN ON TOUCH / CLICK */
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+/* Optional hover support */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c7be5;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2c7be5;
+}
+/* Header */
+header {
+    padding: 20px 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* Main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 140px);
+    padding: 20px;
+}
+
+.card {$1
+    overflow: hidden;
+}
+
+.card-img {
+    width: 360px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 25px;
+    display: block;
+    border-radius: 12px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card a {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #0077ff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.card a:hover {
+    background: #005edc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+    background: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive */
+ (max-width: 500px) {
+    .card {
+        padding: 20px;
+    }
+}
+/* Background */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ffffff);
+}
+
+/* Center everything */
+.login-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.login-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Text */
+.login-card h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Form */
+.login-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+/* Button */
+.login-form button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #4a90e2, #357bd8);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer-text {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-text a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+(max-width: 500px) {
+    .login-card {
+        margin: 20px;
+        padding: 25px;
+    }
+}
