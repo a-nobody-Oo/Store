@@ -123,7 +123,7 @@
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+ (max-width: 768px) {
     .product-page {
         flex-direction: column;
     }
@@ -132,3 +132,4 @@
         height: 300px;
     }
 }
+
